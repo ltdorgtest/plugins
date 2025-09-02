@@ -310,6 +310,8 @@ function addStyles() {
       background-repeat: no-repeat;
       background-position: right 5px center;
       cursor: pointer;
+      max-width: none;
+      min-width: 0px;
     }
 
     .ltd-flyout-content dd.select select:focus {
