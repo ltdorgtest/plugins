@@ -71,7 +71,7 @@ function createProvenanceDropdown() {
   tempDiv.innerHTML = flyoutHTML.trim();
   const dropdownBox = tempDiv.firstChild;
 
-  const mainContent = document.querySelector('div[role="main"]');
+  const mainContent = document.querySelector('@INSERT_POINT@');
   if (mainContent) {
     mainContent.prepend(dropdownBox);
   } else {
