@@ -7,37 +7,42 @@
 function createProvenanceDropdown() {
   // 1. Define the HTML and CSS as template literals.
   const flyoutHTML = `
-    <strong>
-      <details class="provenance-dropdown">
-        <summary class="provenance-summary">Provenance</summary>
-        <div class="provenance-content">
-          The translation is community-driven. If you find any inaccuracies, always refer to the <a href="@UPSTREAM_DOCS@">official documentation</a> or the <a href="@UPSTREAM_REPO@">source repository</a> of the upstream project for the most reliable information.
-        </div>
-      </details>
-    </strong>
+    <details class="provenance-dropdown">
+      <summary class="provenance-summary"><strong>Provenance</strong></summary>
+      <div class="provenance-content">
+        The translation is community-driven. If you find any inaccuracies, always refer to the <a href="@UPSTREAM_DOCS@">official documentation</a> or the <a href="@UPSTREAM_REPO@">source repository</a> of the upstream project for the most reliable information.
+      </div>
+    </details>
   `;
 
   const flyoutCSS = `
     /* Styles for the main dropdown container */
-    .provenance-dropdown {
-      background-color: #d1ecf1; /* Light blue background */
-      border: 1px solid #c8e5e8; /* Light blue border */
-      color: #0c5460; /* Dark blue text */
+    details.provenance-dropdown {
+      color: #ffffff !important;
+      background-color: #263238 !important;
+      border: none !important;
+      box-shadow: 0 4px 10px #000000;
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      line-height: 20px;
       padding: 15px;
       margin-bottom: 20px;
       border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
     /* Styles for the summary (the clickable header) */
     .provenance-summary {
+      color: #27ae60 !important;
+      background-color: #263238 !important;
       cursor: pointer;
       list-style: none; /* Hide the default dropdown arrow */
+      font-weight: bold;
     }
 
     /* Re-add a custom arrow/icon for the dropdown */
     .provenance-summary::before {
       content: "▼"; /* Downward arrow */
+      color: #27ae60 !important;
       display: inline-block;
       margin-right: 10px;
       transition: transform 0.2s ease;
@@ -50,8 +55,23 @@ function createProvenanceDropdown() {
 
     /* Styling for the content of the dropdown */
     .provenance-content {
+      color: #ffffff !important;
+      background-color: #263238 !important;
       line-height: 24px;
       padding-top: 10px; /* Add some space between the summary and content */
+    }
+
+    .provenance-content a {
+      color: #27ae60 !important;
+      background-color: #263238 !important;
+      text-decoration: underline;
+      transition: color 0.3s;
+      display: inline-block;
+    }
+
+    .provenance-content a:hover {
+      color: #ffffff !important;
+      background-color: #263238 !important;
     }
 
     /* Remove padding and margin from summary */
