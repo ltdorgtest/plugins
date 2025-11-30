@@ -21,52 +21,52 @@ function createProvenanceDropdown() {
       color: #ffffff !important;
       background-color: #263238 !important;
       border: none !important;
-      box-shadow: 0 4px 10px #000000;
-      font-family: Arial, sans-serif;
-      font-size: 15px;
-      line-height: 20px;
-      padding: 15px;
-      margin-bottom: 20px;
-      border-radius: 5px;
+      box-shadow: 0 4px 10px #000000 !important;
+      font-family: Arial, sans-serif !important;
+      font-size: 15px !important;
+      line-height: 20px !important;
+      padding: 15px !important;
+      margin-bottom: 20px !important;
+      border-radius: 5px !important;
     }
 
     /* Styles for the summary (the clickable header) */
     .provenance-summary {
       color: #27ae60 !important;
       background-color: #263238 !important;
-      cursor: pointer;
-      list-style: none; /* Hide the default dropdown arrow */
-      font-weight: bold;
+      cursor: pointer !important;
+      list-style: none !important; /* Hide the default dropdown arrow */
+      font-weight: bold !important;
     }
 
     /* Re-add a custom arrow/icon for the dropdown */
     .provenance-summary::before {
-      content: "▼"; /* Downward arrow */
+      content: "▼" !important; /* Downward arrow */
       color: #27ae60 !important;
-      display: inline-block;
-      margin-right: 10px;
-      transition: transform 0.2s ease;
+      display: inline-block !important;
+      margin-right: 10px !important;
+      transition: transform 0.2s ease !important;
     }
 
     /* Rotate the arrow when the dropdown is open */
     .provenance-dropdown[open] .provenance-summary::before {
-      transform: rotate(-180deg);
+      transform: rotate(-180deg) !important;
     }
 
     /* Styling for the content of the dropdown */
     .provenance-content {
       color: #ffffff !important;
       background-color: #263238 !important;
-      line-height: 24px;
-      padding-top: 10px; /* Add some space between the summary and content */
+      line-height: 24px !important;
+      padding-top: 10px !important; /* Add some space between the summary and content */
     }
 
     .provenance-content a {
       color: #27ae60 !important;
       background-color: #263238 !important;
-      text-decoration: underline;
-      transition: color 0.3s;
-      display: inline-block;
+      text-decoration: underline !important;
+      transition: color 0.3s !important;
+      display: inline-block !important;
     }
 
     .provenance-content a:hover {
@@ -77,7 +77,7 @@ function createProvenanceDropdown() {
     /* Remove padding and margin from summary */
     .provenance-summary::-webkit-details-marker,
     .provenance-summary::marker {
-      display: none;
+      display: none !important;
     }
   `;
 
