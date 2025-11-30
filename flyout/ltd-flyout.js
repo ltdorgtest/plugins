@@ -189,173 +189,173 @@ async function updateLinks() {
 function addStyles() {
   const css = `
     .ltd-flyout {
-      color: #ffffff;
-      background-color: #263238;
-      box-shadow: 0 4px 10px #000000;
-      font-family: Arial, sans-serif;
-      font-size: 15px;
-      line-height: 20px;
-      position: fixed;
-      right: 15px;
-      bottom: 50px;
-      z-index: 5000;
-      padding: 5px;
-      border-radius: 5px;
-      max-width: 320px;
+      color: #ffffff !important;
+      background-color: #263238 !important;
+      box-shadow: 0 4px 10px #000000 !important;
+      font-family: Arial, sans-serif !important;
+      font-size: 15px !important;
+      line-height: 20px !important;
+      position: fixed !important;
+      right: 15px !important;
+      bottom: 50px !important;
+      z-index: 5000 !important;
+      padding: 5px !important;
+      border-radius: 5px !important;
+      max-width: 320px !important;
     }
 
     .ltd-flyout-header {
-      color: #27ae60;
-      background-color: #263238;
-      display: flex;
-      padding: 5px;
-      align-items: center;
-      font-weight: bold;
-      cursor: pointer;
+      color: #27ae60 !important;
+      background-color: #263238 !important;
+      display: flex !important;
+      padding: 5px !important;
+      align-items: center !important;
+      font-weight: bold !important;
+      cursor: pointer !important;
     }
 
     .ltd-flyout-header.ltd-icon-only {
-      justify-content: center;
-      padding: 5px;
+      justify-content: center !important;
+      padding: 5px !important;
     }
 
     .ltd-flyout-header-icon {
-      flex-shrink: 0;
+      flex-shrink: 0 !important;
     }
 
     .ltd-flyout-header-icon-img {
-      width: 25px;
-      height: 25px;
-      padding: 5px;
-      display: block;
-      box-sizing: content-box;
+      width: 25px !important;
+      height: 25px !important;
+      padding: 5px !important;
+      display: block !important;
+      box-sizing: content-box !important;
     }
 
     .ltd-flyout-header-label {
-      padding: 5px;
-      flex-grow: 1;
-      text-align: right;
+      padding: 5px !important;
+      flex-grow: 1 !important;
+      text-align: right !important;
     }
 
     .ltd-flyout-header-label.hidden {
-      display: none;
+      display: none !important;
     }
 
     .ltd-flyout-divider {
-      background-color: #808080;
-      height: 1px;
-      margin: 1px 5px;
+      background-color: #808080 !important;
+      height: 1px !important;
+      margin: 1px 5px !important;
     }
 
     .ltd-flyout-divider.ltd-flyout-closed {
-      display: none;
+      display: none !important;
     }
 
     .ltd-flyout-content {
-      color: #ffffff;
-      background-color: #263238;
-      padding: 10px;
-      max-height: 450px;
-      overflow-y: auto;
+      color: #ffffff !important;
+      background-color: #263238 !important;
+      padding: 10px !important;
+      max-height: 450px !important;
+      overflow-y: auto !important;
     }
 
     .ltd-flyout-content.ltd-flyout-closed {
-      display: none;
+      display: none !important;
     }
 
     .ltd-flyout-content dl {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0;
-      padding: 0;
+      display: flex !important;
+      flex-wrap: wrap !important;
+      margin: 0 !important;
+      padding: 0 !important;
     }
 
     .ltd-flyout-content dt {
-      color: #808080;
-      width: 100%;
-      font-weight: bold;
-      text-align: left;
-      padding: 0;
+      color: #808080 !important;
+      width: 100% !important;
+      font-weight: bold !important;
+      text-align: left !important;
+      padding: 0 !important;
     }
 
     .ltd-flyout-content dd {
-      margin: 0;
-      padding: 0;
+      margin: 0 !important;
+      padding: 0 !important;
     }
 
     .ltd-flyout-content dd.newline {
-      flex-basis: 100%;
-      height: 0;
+      flex-basis: 100% !important;
+      height: 0 !important;
     }
 
     .ltd-flyout-content dd.select {
-      display: block;
-      margin-top: 5px;
-      margin-bottom: 5px;
+      display: block !important;
+      margin-top: 5px !important;
+      margin-bottom: 5px !important;
     }
 
     .ltd-flyout-content dd.select select {
-      appearance: none; /* Remove default browser styling */
-      color: #ffffff;
-      background-color: #263238;
-      border: 1px solid #808080;
-      padding: 5px 30px 5px 10px; /* Add right padding for arrow */
-      border-radius: 5px;
-      font-size: inherit;
-      line-height: inherit;
-      width: 100%;
-      box-sizing: border-box;
-      box-shadow: none;
-      background-image: url('data:image/svg+xml;utf8,<svg fill="%23ffffff" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>'); /* Custom arrow */
-      background-repeat: no-repeat;
-      background-position: right 5px center;
-      cursor: pointer;
-      max-width: none;
-      min-width: 0px;
+      appearance: none !important; /* Remove default browser styling */
+      color: #ffffff !important;
+      background-color: #263238 !important;
+      border: 1px solid #808080 !important;
+      padding: 5px 30px 5px 10px !important; /* Add right padding for arrow */
+      border-radius: 5px !important;
+      font-size: inherit !important;
+      line-height: inherit !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+      box-shadow: none !important;
+      background-image: url('data:image/svg+xml;utf8,<svg fill="%23ffffff" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>') !important; /* Custom arrow */
+      background-repeat: no-repeat !important;
+      background-position: right 5px center !important;
+      cursor: pointer !important;
+      max-width: none !important;
+      min-width: 0px !important;
     }
 
     .ltd-flyout-content dd.select select:focus {
-      outline: none;
-      border-color: #27ae60;
-      box-shadow: 0 0 5px rgba(39, 174, 96, 0.5);
+      outline: none !important;
+      border-color: #27ae60 !important;
+      box-shadow: 0 0 5px rgba(39, 174, 96, 0.5) !important;
     }
 
     .ltd-flyout-content dd.select select option {
-      background-color: #263238;
-      color: #ffffff;
+      background-color: #263238 !important;
+      color: #ffffff !important;
     }
 
     .ltd-flyout-content dd.select select option code {
-      font-family: monospace;   /* Use monospace font */
-      color: #ddd;              /* Adjust code color */
+      font-family: monospace !important;   /* Use monospace font */
+      color: #ddd !important;              /* Adjust code color */
     }
 
     .ltd-flyout-content dd.options {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 5px;
-      justify-content: flex-start;
+      display: flex !important;
+      flex-wrap: wrap !important;
+      gap: 5px !important;
+      justify-content: flex-start !important;
     }
 
     .ltd-flyout-content dd.options a {
-      color: #ffffff;
-      background-color: #263238;
-      text-decoration: none;
-      padding: 5px;
-      border-radius: 5px;
-      transition: background 0.3s;
-      display: inline-block;
+      color: #ffffff !important;
+      background-color: #263238 !important;
+      text-decoration: none !important;
+      padding: 5px !important;
+      border-radius: 5px !important;
+      transition: background 0.3s !important;
+      display: inline-block !important;
     }
 
     .ltd-flyout-content dd.options a:hover {
-      color: #ffffff;
-      background-color: #27ae60;
+      color: #ffffff !important;
+      background-color: #27ae60 !important;
     }
 
     .ltd-flyout-content dd.options a.selected {
-      color: #ffffff;
-      background-color: #27ae60;
-      font-weight: bold;
+      color: #ffffff !important;
+      background-color: #27ae60 !important;
+      font-weight: bold !important;
     }
   `;
 
